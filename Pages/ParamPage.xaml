@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="NavigationQueryTest.Pages.ParamPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NavigationQueryTest.ViewModels"
+             Title="Param Page"
+             x:DataType="vm:ParamViewModel">
+    <VerticalStackLayout Spacing="50">
+        <Label FontSize="Title"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="Navigation event order"
+               VerticalOptions="Center" />
+
+        <Label HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="{Binding AppearedAt}"
+               VerticalOptions="Center" />
+
+        <Label HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="{Binding NavigatedAt}"
+               VerticalOptions="Center" />
+
+        <Label HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="{Binding ReceivedParamAt}"
+               VerticalOptions="Center" />
+
+        <Label HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               Text="{Binding EventsReport}"
+               VerticalOptions="Center" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
